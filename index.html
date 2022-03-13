@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="halloweenparallax">
+      <section>
+        <img id="bg" src="bg.jpg" alt="bg" />
+        <img id="bats" src="bats.png" alt="bats" />
+        <img id="castle" src="castle.png" alt="castle" />
+        <img id="img" src="img.png" alt="img" />
+        <img id="wolf" src="wolf.png" alt="wolf" />
+      </section>
+      <div class="sec">
+        <div class="content">
+          <h1>Happy Halloween</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            doloremque nemo dolores laborum quidem. Soluta temporibus doloribus
+            natus deserunt minima sit totam porro, cupiditate voluptas quae,
+            voluptatem eos voluptates sed asperiores nihil ipsa veritatis
+            blanditiis adipisci atque beatae doloremque animi harum eius. Eius,
+            ea aut ratione corporis nesciunt quisquam modi reprehenderit illo
+            officiis quas et possimus, ipsa molestiae quibusdam optio at culpa
+            beatae quaerat doloribus laudantium. In numquam nesciunt
+            exercitationem eos? Aut incidunt quo possimus voluptatibus, nemo
+            laborum molestiae laudantium labore delectus, repellat dolores?
+            Accusamus, velit deserunt. Ab id nihil, amet adipisci non tempora
+            est ad, eos obcaecati, libero in aliquam harum iusto maxime nulla.
+            Beatae recusandae temporibus, eius officiis quo illum officia et
+            quod illo, nulla dolores, commodi earum eaque dolore suscipit esse.
+            Veniam veritatis, perferendis voluptatum eos ad tempora possimus
+            aspernatur eum esse! Earum vel distinctio dolore, veritatis dicta id
+            eos repellat animi odit vero culpa? Veritatis, deleniti eaque.
+            Distinctio recusandae numquam quo eligendi optio. Sequi accusamus
+            adipisci assumenda exercitationem id possimus nihil odio. Maiores
+            ipsa iure labore dolores similique velit necessitatibus sequi
+            nesciunt ex ratione. Nihil, saepe! Praesentium placeat veniam, amet
+            error nesciunt mollitia modi asperiores vero temporibus, ipsam aut
+            dolorum incidunt dolores, aliquam ullam sequi. Corporis veniam
+            delectus cupiditate nemo alias impedit voluptate architecto
+            consectetur, nobis asperiores saepe maiores provident repudiandae
+            perspiciatis laborum! Quis itaque, consequatur quibusdam nihil
+            consequuntur iste veritatis. Velit porro eos recusandae rerum
+            dolorem a. Aperiam quia, repellat, animi totam quam molestiae magnam
+            eum deserunt, quisquam dolorum fugiat veritatis distinctio. Deserunt
+            iste voluptates ad possimus. Quidem consequatur error laudantium
+            fugit hic sapiente officiis eligendi voluptatibus eveniet
+            praesentium laborum aut ea porro, molestias possimus corrupti eius
+            omnis totam libero nulla iusto deserunt eos assumenda nihil! Iure
+            obcaecati eveniet, optio, eum aut iste expedita accusantium in
+            cumque dolor, consectetur quisquam doloribus ipsam accusamus itaque
+            eos?
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.to("#img", {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        x: 1500,
+        y: 500,
+      });
+
+      gsap.from("#wolf", {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        x: 400,
+      });
+
+      gsap.to("#castle", {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        x: -100,
+      });
+
+	gsap.to("#bats", {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        scale: 1.5,
+      });
+    </script>
+  </body>
+</html>
